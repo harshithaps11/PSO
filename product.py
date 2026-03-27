@@ -7,7 +7,7 @@ def product(nums):
         prefix*=nums[i]
     suffix = 1
     for i in range (n-1,-1,-1):
-        ans[i] += suffix
+        ans[i] *= suffix
         suffix *= nums[i]
     return ans
 print(product([1,2,3,4]))
